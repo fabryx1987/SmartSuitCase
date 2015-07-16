@@ -57,17 +57,3 @@
 
 
 
-  /*
-      Calcolo Quantità
-  */
-  /*Core.priority
-    .setData([
-      { id: 0, name: "Mutande", coefQ: 1 },
-      { id: 1, name: "Calzini", coefQ: 1 },
-      { id: 2, name: "Maglietta Intima", coefQ: 0.50 },
-      { id: 3, name: "Maglietta a maniche corte", coefQ: 0.50 },
-      { id: 4, name: "Pantaloni", coefQ: 0.33 }
-    ])
-    .setDaysNumber(7)
-    .run();*/
-    
