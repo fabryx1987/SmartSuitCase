@@ -1,0 +1,153 @@
+{
+   "suitcase":[
+      {
+         "type":1,
+         "name" : "nome 1",
+         "maxWeight":1880,
+         "volume":36000
+      },
+      {
+         "type":2,
+         "name" : "nome 2",
+         "maxWeight":1630,
+         "volume":41000
+      },
+      {
+         "type":3,
+         "name" : "nome 3",
+         "maxWeight":3150,
+         "volume":34000
+      },
+      {
+         "type":4,
+         "name" : "nome 4",
+         "maxWeight":2860,
+         "volume":37000
+      },
+      {
+         "type":5,
+         "name" : "nome 5",
+         "maxWeight":2840,
+         "volume":29000
+      }
+   ],
+   "elementList1":[
+      {
+         "name":"canottiera cotone",
+         "maxWeight":10,
+         "volume":100
+      },
+      {
+         "name":"canottiera maniche",
+         "maxWeight":11,
+         "volume":110
+      },
+      {
+         "name":"corte",
+         "maxWeight":12,
+         "volume":120
+      },
+      {
+         "name":"boxer sintetici",
+         "maxWeight":13,
+         "volume":130
+      },
+      {
+         "name":"boxer cotone",
+         "maxWeight":14,
+         "volume":140
+      },
+      {
+         "name":"calzini corti cotone",
+         "maxWeight":15,
+         "volume":150
+      },
+      {
+         "name":"calzini lunghi cotone",
+         "maxWeight":16,
+         "volume":160
+      },
+      {
+         "name":"calzini lunghi spugna",
+         "maxWeight":17,
+         "volume":170
+      },
+      {
+         "name":"pantofole estive",
+         "maxWeight":18,
+         "volume":180
+      },
+      {
+         "name":"pigiama primaverile",
+         "maxWeight":19,
+         "volume":190
+      },
+      {
+         "name":"maniche lunghe",
+         "maxWeight":20,
+         "volume":200
+      }
+   ],
+   "elementList2":[
+      {
+         "name":"canottiera cotone",
+         "maxWeight":20,
+         "volume":210
+      },
+      {
+         "name":"maglioncino cotone",
+         "maxWeight":21,
+         "volume":220
+      },
+      {
+         "name":"felpa cotone",
+         "maxWeight":22,
+         "volume":230
+      },
+      {
+         "name":"pantaloni tuta cotone",
+         "maxWeight":23,
+         "volume":240
+      },
+      {
+         "name":"giacca tuta sintetica",
+         "maxWeight":24,
+         "volume":250
+      },
+      {
+         "name":"pantaloni tuta sintetici",
+         "maxWeight":25,
+         "volume":260
+      },
+      {
+         "name":"giacca elegante cotone",
+         "maxWeight":26,
+         "volume":270
+      },
+      {
+         "name":"giacca elegante velluto",
+         "maxWeight":27,
+         "volume":280
+      },
+      {
+         "name":"camicia maniche corte",
+         "maxWeight":28,
+         "volume":290
+      },
+      {
+         "name":"cotone",
+         "maxWeight":29,
+         "volume":300
+      },
+      {
+         "name":"giacca a vento leggera",
+         "maxWeight":30,
+         "volume":310
+      },
+      {
+         "name":"pantofole invernali",
+         "maxWeight":31,
+         "volume":320
+      }
+   ]
+}
