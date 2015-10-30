@@ -3,15 +3,6 @@
 
 
   /**
-  *   Services
-  */
-  /*Services.generateMethod([
-      ['getObject', '//localhost/SmartSuitCaseServerProject/index.php/Object/getObject'],
-  ]);
-    */
-
-
-  /**
   *   Calcolo pesi
   */
   /*Core.peso
@@ -30,7 +21,7 @@
         { list: [580, 270, 270, 214, 125, 160, 90, 52, 52, 37, 37, 55], hasCoefList: true },
         { list: [580, 270, 270, 214, 125, 160, 90, 52, 52, 37, 37, 55] }
       ]);
-    
+
       console.log("Risultato V/F: ", Core.peso.run());
       console.log("Risultato: ", Core.peso.get());
   */
@@ -43,7 +34,7 @@
     { from: 0, to: 500, coef: 0.965 },
     { from: 501, to: 1000, coef: 0.975 },
     { from: 1001, to: 2000, coef: 0.985 },
-    { from: 2001, to: 10000, coef: 0.995 }        
+    { from: 2001, to: 10000, coef: 0.995 }
   ]);
   Core.volume.setCoefSic(1.02);
   Core.volume.setMax(8450);
@@ -54,6 +45,3 @@
   );
   console.log("Risultato: ", Core.volume.run());
   console.log("Risultato: ", Core.volume.get());
-
-
-

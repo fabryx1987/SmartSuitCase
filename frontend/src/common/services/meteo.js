@@ -5,7 +5,7 @@ Core.meteo = (function(){
     /**
     *  Variabili private
     */
-    
+
 
 
 
@@ -19,7 +19,7 @@ Core.meteo = (function(){
 
     /**
     *   @method reset
-    *   @return {Boolean}    
+    *   @return {Boolean}
     */
     _reset = function () {
         return true;

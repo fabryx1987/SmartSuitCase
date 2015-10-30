@@ -1,1 +1,1 @@
-## SmartsuitCase APP
+## SmartSuitcase APP
