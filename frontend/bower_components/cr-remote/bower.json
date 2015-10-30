@@ -1,7 +1,0 @@
-{
-  "name": "cr-remote",
-  "version" : "0.4.1",
-  "dependencies": {
-    "angular": ">=1.2.0"
-  }
-}
