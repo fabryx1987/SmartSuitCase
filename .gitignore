@@ -1,0 +1,15 @@
+*~
+plugins
+.sass-cache/
+www
+platforms
+dist/
+node_modules/
+bower_components/
+vendor/
+Thumbs.db
+.DS_Store
+npm-debug.log
+.project
+.settings
+config/secret.json
