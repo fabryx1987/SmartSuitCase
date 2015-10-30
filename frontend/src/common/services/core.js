@@ -13,7 +13,7 @@
     */
     _coef_peso_list     = [],
     _coef_volume_list   = [],
-    
+
     _coef_peso_sic      = [],
     _coif_volume_sic    = [],
 
@@ -22,7 +22,7 @@
 
     _max_peso           = 0,
     _max_volume         = 0,
-  
+
     _my_peso            = 0,
     _my_volume          = 0,
 
@@ -44,7 +44,7 @@
 
     /**
     * @method _predicatoDiAssociazioneCoefficienteLista
-    * @return {Boolean} 
+    * @return {Boolean}
     */
     _predicatoDiAssociazioneCoefficienteLista = function (l, a, b) {
         return l >= a && l <= b;
@@ -53,7 +53,7 @@
 
     /**
     * @method _percentualeErrore
-    * @return {Boolean} 
+    * @return {Boolean}
     */
     _percentualeErrore = function(a,b,e) {
         return (((a / b) - 1) * 100) <= e;
@@ -102,12 +102,12 @@
         if (!list && !coeflist) { return; }
 
         var l = list, c = coeflist, result = 0;
-        
+
         for (var i = 0, len = l.length; i < len; i++)
-        {               
+        {
             for (var y = 0, len2 = c.length; y < len2; y++)
-            {     
-                if(_predicatoDiAssociazioneCoefficienteLista(l[i], c[y].from, c[y].to)) 
+            {
+                if(_predicatoDiAssociazioneCoefficienteLista(l[i], c[y].from, c[y].to))
                 {
                     result += _applicaCoefficiente(l[i], c[y].coef);
 
@@ -122,7 +122,7 @@
                     //console.log(i, "peso", l[i], " coefficiente non assegnato ----------->>>>>>");
                 }
             }
-        }        
+        }
 
         return result;
     },
@@ -132,13 +132,14 @@
     * @method Disequazioni
     * @return {Number}
     */
-    _disequazione = function (data, coeflist, coefSic) {                
+    _disequazione = function (data, coeflist, coefSic) {
 
         var l = data, result = 0, list, hasCoefList;
 
         for (var i = 0, len = l.length; i < len; i++)
         {
-            list = l[i].list, hasCoefList = l[i].hasCoefList || false;
+            list = l[i].list;
+            hasCoefList = l[i].hasCoefList || false;
 
             if(hasCoefList)
             {
@@ -149,13 +150,13 @@
                 for (var y = 0, len2 = list.length; y < len2; y++)
                 {
                     result += list[y];
-                }                
+                }
             }
         }
 
         return Math.round(result * coefSic);
     },
-    
+
 
     /**
     * @method volume
@@ -167,13 +168,13 @@
 
             var dis = _disequazione.call(this, _data_volume, _coef_volume_list, _coif_volume_sic);
 
-            if(dis <= _max_volume) 
+            if(dis <= _max_volume)
             {
                 _my_volume += dis;
 
                 return true;
-            } 
-            else 
+            }
+            else
             {
                 _my_volume += dis;
 
@@ -195,13 +196,13 @@
 
             peso = _maxPeso(_max_peso);
 
-            if(dis <= peso) 
+            if(dis <= peso)
             {
                 _my_peso += dis;
 
                 return true;
-            } 
-            else 
+            }
+            else
             {
                 _my_peso += dis;
 
@@ -215,7 +216,7 @@
     *   @validateData
     *   @return {Boolean}
     */
-    _dataValidation = {        
+    _dataValidation = {
 
       peso: function () {
           if (!_max_peso_compagnia) { console.warn("_max_peso_compagnia", "not set!"); return false; }
@@ -238,19 +239,19 @@
 
     /**
     *   @method reset
-    *   @return {Boolean}    
+    *   @return {Boolean}
     */
     _reset = function () {
         /*_coef_peso_list   = [],
         _coef_volume_list   = [],
         _coef_peso_sic      = [],
-        _coif_volume_sic    = [],    
+        _coif_volume_sic    = [],
         _data_peso          = [],
-        _data_volume        = [],    
+        _data_volume        = [],
         _max_peso_compagnia = 0,
         _max_peso           = 0,
         _max_volume         = 0,*/
-        _my_peso            = 0,
+        _my_peso            = 0;
         _my_volume          = 0;
         return true;
     },
