@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ng-smartsuitcase" ng-controller="AppCtrl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title ng-bind="_state.data.pageTitle"></title>
+
+    <!-- compiled CSS -->
+    <% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" />
+    <% }); %>
+
+    <!-- compiled JavaScript -->
+    <% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% }); %>
+
+    <!-- devcode: mobile -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- endcode -->
+    
+  </head>
+  <body>
+      <header identity="_identity.user" state="_state"></header>
+      <div class="container">
+        <div class="row">
+          <left class="col-lg-3" ></left>
+          <div  class="col-lg-9 fading-view" ui-view="main"></div>
+        </div>
+      </div>
+  </body>
+</html>

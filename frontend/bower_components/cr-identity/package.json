@@ -1,0 +1,17 @@
+{
+    "name": "cr-identity",
+    "version": "0.4.4",
+    "description": "Module for management of user's identity with crSession and crAcl",
+    "devDependencies": {
+        "karma": "0.12.*",
+        "karma-cli": "*",
+        "karma-phantomjs-launcher": "*",
+        "karma-jasmine": "0.1.*",
+        "phantomjs": "*",
+        "bower": "*"
+    },
+    "scripts": {
+        "postinstall" : "./node_modules/.bin/bower install",
+        "test": "./node_modules/.bin/karma start --single-run"
+    }
+}

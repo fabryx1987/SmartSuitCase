@@ -1,0 +1,12 @@
+{
+    "name": "cr-aws",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": ">=1.2.0",
+        "aws-sdk": "latest",
+        "cognitojs": "http://github.com/aws/amazon-cognito-js/archive/master.zip"
+    },
+    "devDependencies": {
+        "angular-mocks": ">=1.2.0"
+    }
+}

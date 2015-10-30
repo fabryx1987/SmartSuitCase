@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="ng-smartsuitcase" ng-controller="AppCtrl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title ng-bind="_state.data.pageTitle"></title>
+
+    <!-- compiled CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="assets/ng-smartsuitcase-1.0.0.css" />
+    
+
+    <!-- compiled JavaScript -->
+    
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    
+    <script type="text/javascript" src="bower_components/satellizer/satellizer.js"></script>
+    
+    <script type="text/javascript" src="bower_components/cr-loading/cr-loading.js"></script>
+    
+    <script type="text/javascript" src="bower_components/cr-session/cr-session.js"></script>
+    
+    <script type="text/javascript" src="bower_components/cr-remote/cr-remote.js"></script>
+    
+    <script type="text/javascript" src="bower_components/cr-acl/cr-acl.js"></script>
+    
+    <script type="text/javascript" src="bower_components/cr-identity/cr-identity.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angulartics/src/angulartics.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js"></script>
+    
+    <script type="text/javascript" src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    
+    <script type="text/javascript" src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    
+    <script type="text/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
+    
+    <script type="text/javascript" src="src/app/app.js"></script>
+    
+    <script type="text/javascript" src="src/app/home/home.js"></script>
+    
+    <script type="text/javascript" src="src/common/conf/conf.js"></script>
+    
+    <script type="text/javascript" src="src/common/layout/layout.js"></script>
+    
+    <script type="text/javascript" src="templates-common.js"></script>
+    
+    <script type="text/javascript" src="templates-app.js"></script>
+    
+
+        
+  </head>
+  <body>
+      <header identity="_identity.user" state="_state"></header>
+      <div class="container">
+        <div class="row">
+          <left class="col-lg-3" ></left>
+          <div  class="col-lg-9 fading-view" ui-view="main"></div>
+        </div>
+      </div>
+  </body>
+</html>

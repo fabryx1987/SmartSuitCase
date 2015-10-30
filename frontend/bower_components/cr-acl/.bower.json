@@ -1,0 +1,22 @@
+{
+  "name": "cr-acl",
+  "version": "0.4.2",
+  "dependencies": {
+    "angular": ">=1.2.0",
+    "angular-animate": ">=1.2.0",
+    "angular-ui-router": "~0.2.1"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0"
+  },
+  "homepage": "https://github.com/ngutils/cr-acl",
+  "_release": "0.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.2",
+    "commit": "314919a3bf3ca8317cce9dff5f9fcd6f12cc236e"
+  },
+  "_source": "git://github.com/ngutils/cr-acl.git",
+  "_target": "~0.4",
+  "_originalSource": "cr-acl"
+}
