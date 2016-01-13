@@ -12,3 +12,4 @@ frontend/npm-debug.log
 frontend/.project
 frontend/.settings
 frontend/config/secret.json
+.DS_Store
